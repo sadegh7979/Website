@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html dir="rtl" class="light">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود</title>
+    <link rel="stylesheet" href="./styles/signup-login.css">
+        
+</head>
+
+
+<body>
+    <main class="centerflex cldirection">
+        <img class="logo_image flex" src="./images/logo.png" width="100px" height="auto">
+        <a class="centerflex btn-style home-btn" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" fill="currentColor"><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg></a>
+        <section class="login-box">
+            <div class="flex half-gap">
+                <a class="signup-btn centerflex btn-style" href="./signup.html"> <svg style="margin-left: 0.2rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" width="24" height="24"><path d="M352 128c0 70.7-57.3 128-128 128s-128-57.3-128-128S153.3 0 224 0s128 57.3 128 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>ثبت نام</a>
+                <a class="login-btn centerflex btn-style btn-active" href="./login.html">
+                    <svg style="margin-left: 0.2rem" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>ورود</a>
+            </div>
+            <div class="login-text">
+                <h4 class="hfont-size">خوش برگشتی!</h4>
+                <p>اگه قبلا ثبت نام کردی، وارد شو</p>
+            </div>
+            <div>
+                <a class="use-google btn-style" href="/login/google">
+                    <svg  style= "width: 24px; margin-left: 0.5rem" xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66">
+                    <path class="svgcolor" fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/>
+                    <path class="svgcolor" fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/>
+                    <path class="svgcolor" fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/>
+                    <path class="svgcolor" fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/>
+                    <path class="svgcolor" fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/>
+                    </svg>ورود با گوگل</a>
+            </div>
+            <div class="eight-width">
+                <form id="form" action="/" method="GET">
+                    <div>
+                        <label>ایمیل/شماره موبایل</label>
+                        <input dir="ltr" type="text" id="name-input">
+                    </div>
+                    <div>                  
+                        <label>پسورد</label>
+                        <span class="password-show" onclick="showpass()">
+                            <i id="eye-show">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#b9b9b9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                    <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7"></path>
+                                 </svg>
+                            </i>
+                            <i id="eye-hide">  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#b9b9b9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <line x1="3" y1="3" x2="21" y2="21"></line>
+                                    <path d="M10.584 10.587a2 2 0 0 0 2.828 2.83"></path>
+                                    <path d="M9.363 5.365a9.466 9.466 0 0 1 2.637 -.365c4 0 7.333 2.333 10 7c-.778 1.361 -1.612 2.524 -2.503 3.488m-2.14 1.861c-1.631 1.1 -3.415 1.651 -5.357 1.651c-4 0 -7.333 -2.333 -10 -7c1.369 -2.395 2.913 -4.175 4.632 -5.341"></path>
+                                 </svg>
+                            </i>  
+                        </span>
+                        <input dir="ltr" type="password" id="pass-input" onkeyup="checkCapsWarning(event)" onfocus="checkCapsWarning(event)" onblur="removeCapsWarning()"/>
+                        <small id="capslock-warn"><svg class="relative" style="margin-left: 0.2rem; top: 5px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widt="20" height="20" fill="currentColor"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>کلید Caps Lock روشن است!</small>
+                    </div>
+                    <div class="centerflex">
+                    <a class="forgot-password" href="#">رمزم رو فراموش کردم</a>
+                    </div>
+                    <button type="submit" class="btn-style btn-active full-width main-btn">ورود</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/javascript.js"></script>
+</body>
